@@ -8,4 +8,7 @@ class SuperHero
     @@superheroes << self
   end
 
+  def self.all
+    @@superheroes
+  end
 end

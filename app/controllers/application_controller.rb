@@ -9,13 +9,13 @@ get '/super_hero' do
 end
 
 post '/team' do
-  @team = Team.new (param[:team)
+  @team = Team.new (param[:team])
 
   params[:team][:superheros].each do |details|
     SuperHero.new(details)
   end
 
-  @superheroes = SuperHero
+  @superheroes = SuperHero.all
 
   erb :team
 end

@@ -11,7 +11,7 @@ end
 post '/team' do
   @team = Team.new (param[:team])
 
-  params[:team][:superheros].each do |details|
+  params[:team][:members].each do |details|
     SuperHero.new(details)
   end
 

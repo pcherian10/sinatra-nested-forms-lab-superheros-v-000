@@ -9,7 +9,7 @@ get '/super_hero' do
 end
 
 post '/team' do
-  @team = Team.new (param[:team])
+  @team = Team.new(params[:team])
 
   params[:team][:members].each do |details|
     SuperHero.new(details)

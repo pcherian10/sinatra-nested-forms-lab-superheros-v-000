@@ -8,7 +8,6 @@ get '/super_hero' do
   erb :super_hero
 end
 
-
 post '/team' do
   @team = Team.new (param[:team)
 

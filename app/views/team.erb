@@ -11,12 +11,12 @@
         <h4>Motto: <%= @team.motto %></h4>
     </div><br>
 
-    <h1>Super</h1>
-      <% @ships.each do |ship| %>
+    <h3>Heros</h3>
+      <% @superheroes.each do |member| %>
         <div class="ship">
-          <p>Name: <%= ship.name %></p>
-          <p>Type: <%= ship.type %></p>
-          <p>Booty: <%= ship.booty %></p>
+          <p>Name: <%= member.name %></p>
+          <p>Power: <%= member.power %></p>
+          <p>Bio: <%= member.bio %></p>
         </div><br>
         <% end %>
   </body>
